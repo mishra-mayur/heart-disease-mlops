@@ -19,9 +19,9 @@ python -m venv .venv
 source .venv/bin/activate              # Windows: .venv\\Scripts\\activate
 pip install -r requirements.txt
 python scripts/download_data.py
-python src/eda.py
+python -m src.eda
 mlflow ui --port 5000                  # open http://localhost:5000 in a second terminal
-python src/train.py
+python -m src.train
 pytest -q
 ruff check src tests scripts
 ```

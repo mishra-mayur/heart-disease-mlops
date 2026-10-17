@@ -7,4 +7,3 @@ PROCESSED_DATA = DATA_DIR / "processed" / "heart_disease_clean.csv"
 ARTIFACTS_DIR = ROOT / "artifacts"
 MODEL_PATH = ARTIFACTS_DIR / "best_model.joblib"
 PLOTS_DIR = ARTIFACTS_DIR / "plots"
-

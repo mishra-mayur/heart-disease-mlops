@@ -5,9 +5,9 @@ setup:
 data:
 	python scripts/download_data.py
 eda:
-	python src/eda.py
+	python -m src.eda
 train:
-	python src/train.py
+	python -m src.train
 test:
 	pytest -q
 lint:
@@ -20,4 +20,3 @@ docker-run:
 	docker run --rm -p 8000:8000 heart-disease-api:1.0.0
 minikube-deploy:
 	kubectl apply -f k8s/namespace.yaml -f k8s/deployment.yaml -f k8s/service.yaml
-
