@@ -1,0 +1,12 @@
+.venv/
+__pycache__/
+.pytest_cache/
+.ruff_cache/
+mlruns/
+artifacts/
+data/raw/
+data/processed/
+*.joblib
+*.png
+.env
+

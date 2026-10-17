@@ -1,0 +1,10 @@
+.git
+.venv
+mlruns
+data
+tests
+notebooks
+artifacts/plots
+artifacts/metrics.json
+__pycache__
+
