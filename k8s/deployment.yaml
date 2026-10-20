@@ -13,7 +13,7 @@ spec:
     spec:
       containers:
         - name: api
-          image: ghcr.io/REPLACE_WITH_YOUR_GITHUB_USERNAME/heart-disease-api:1.0.0
+          image: ghcr.io/mishra-mayur/heart-disease-api:1.0.0
           imagePullPolicy: IfNotPresent
           ports: [{containerPort: 8000}]
           readinessProbe: {httpGet: {path: /health, port: 8000}, initialDelaySeconds: 5, periodSeconds: 10}
